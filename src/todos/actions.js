@@ -9,3 +9,9 @@ export const removeTodo = text => ({
     type: REMOVE_TODO,
     payload: {text}
 })
+
+export const SET_AS_COMPLETED = 'SET_COMPLETED';
+export const setAsCompleted = (text,isCompleted) => ({
+    type: SET_AS_COMPLETED,
+    payload: {text,isCompleted}
+})
